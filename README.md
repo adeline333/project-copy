@@ -85,13 +85,10 @@ adeli@DESKTOP-SGKPF3E MINGW64 ~/project1 (dev)
 $ git branch -d test
 Deleted branch test (was e4f8c34).
 
+```
 
-
-```bash
-
- ## bundle 1
-## exercise 2
-
+## bundle
+## exercise1
 ```bash
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
 On branch main
@@ -133,31 +130,6 @@ PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash list
 stash@{0}: On main: team.html
 stash@{1}: On main: about.html
 stash@{2}: On main: home.html
-PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash pop stash@{1}
-error: unknown switch `e'
-usage: git stash pop [--index] [-q | --quiet] [<stash>]
-    -q, --[no-]quiet      be quiet, only report errors
-    --[no-]index          attempt to recreate the index
-PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash pop 1        
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   about.html
-
-Dropped refs/stash@{1} (dd7637e07063f233ad036f82dbac7322abf2aaf0)
-stash@{0}: On main: team.html
-stash@{1}: On main: home.html
-PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> hit stash pop 1
-hit : The term 'hit' is not recognized as the name of a cmdlet, function, script file, or  
-operable program. Check the spelling of the name, or if a path was included, verify that   
-the path is correct and try again.
-At line:1 char:1
-+ hit stash pop 1
-+ ~~~
-    + FullyQualifiedErrorId : CommandNotFoundException
- 
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash pop 1
 On branch main
 
@@ -187,17 +159,6 @@ Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
-
-PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> gite reset --hard 
-gite : The term 'gite' is not recognized as the name of a cmdlet, function, script file,   
-or operable program. Check the spelling of the name, or if a path was included, verify     
-that the path is correct and try again.
-At line:1 char:1
-+ gite reset --hard
-+ ~~~~
-    + CategoryInfo          : ObjectNotFound: (gite:String) [], CommandNotFoundException   
-    + FullyQualifiedErrorId : CommandNotFoundException
- 
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git reset --hard
 HEAD is now at 6f046d6 exercise 2 bundle1
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
@@ -207,4 +168,4 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> 
 
-```bash
+```
