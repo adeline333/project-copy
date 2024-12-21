@@ -89,3 +89,123 @@ Deleted branch test (was e4f8c34).
 
 
 ```bash
+
+ ## bundle 1
+## exercise 2
+
+```
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+        home.html
+
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git add "home.html"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   home.html
+
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash save"home.html"
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash save "home.html"
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.html
+
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash save "about.html"        
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git add "team.html"
+Saved working directory and index state On main: team.html
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash list
+stash@{0}: On main: team.html
+stash@{1}: On main: about.html
+stash@{2}: On main: home.html
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash pop stash@{1}
+error: unknown switch `e'
+usage: git stash pop [--index] [-q | --quiet] [<stash>]
+    -q, --[no-]quiet      be quiet, only report errors
+    --[no-]index          attempt to recreate the index
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash pop 1        
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+Dropped refs/stash@{1} (dd7637e07063f233ad036f82dbac7322abf2aaf0)
+stash@{0}: On main: team.html
+stash@{1}: On main: home.html
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> hit stash pop 1
+hit : The term 'hit' is not recognized as the name of a cmdlet, function, script file, or  
+operable program. Check the spelling of the name, or if a path was included, verify that   
+the path is correct and try again.
+At line:1 char:1
++ hit stash pop 1
++ ~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash pop 1
+On branch main
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   home.html
+
+Dropped refs/stash@{1} (851729355da3d7fbd02ce7cc2ddeaee90228b94a)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git commit -m "exercise 2 bundle1" 
+[main 6f046d6] exercise 2 bundle1
+ create mode 100644 about.html
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 514 bytes | 171.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash list
+stash@{0}: On main: team.html
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git stash pop 0
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> gite reset --hard 
+gite : The term 'gite' is not recognized as the name of a cmdlet, function, script file,   
+or operable program. Check the spelling of the name, or if a path was included, verify     
+that the path is correct and try again.
+At line:1 char:1
++ gite reset --hard
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (gite:String) [], CommandNotFoundException   
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git reset --hard
+HEAD is now at 6f046d6 exercise 2 bundle1
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> 
+
+```
