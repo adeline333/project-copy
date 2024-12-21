@@ -87,13 +87,12 @@ Deleted branch test (was e4f8c34).
 
 
 
-
 ```bash
 
  ## bundle 1
 ## exercise 2
 
-```
+```bash
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -208,4 +207,4 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> 
 
-```
+```bash
