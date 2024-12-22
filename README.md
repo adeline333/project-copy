@@ -87,8 +87,8 @@ Deleted branch test (was e4f8c34).
 
 ```
 
-## bundle
-## exercise1
+## bundle 1
+## exercise 2
 ```bash
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
 On branch main
@@ -167,5 +167,40 @@ Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> 
+
+```
+## bundle 2
+## exercise 1
+```bash
+
+* main
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git checkout ft/bundle-2
+Switched to branch 'ft/bundle-2'
+On branch ft/bundle-2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git add "services.html"
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git commit -m "added the the services.html page"
+[ft/bundle-2 8577a13] added the the services.html page
+ 1 file changed, 10 insertions(+)
+ create mode 100644 services.html
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git push origin ft/bundle-2       
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 424 bytes | 424.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/adeline333/Gym_Git_Exercise_Solutions/pull/new/ft/bundle-
+remote:
+To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions>
 
 ```
