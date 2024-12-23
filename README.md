@@ -496,3 +496,65 @@ To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
    b593462..f71ce66  ft/team-page -> ft/team-page
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions>
 ```
+## bundle 3
+## exercise 2
+```bash
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
+On branch main
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git add .
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git commit -m "added the solution to exercise 1 in bunPS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
+On branch main
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git add .
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git commit -m "added some little content to the home page"
+ 1 file changed, 1 insertion(+)
+Enumerating objects: 5, done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 179.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
+   df13221..6a5e547  main -> main
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git add .
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git commit -m "modified the 
+home page as required"
+[ft/home-page-redesign b8d4a64] modified the home page as required
+ 1 file changed, 1 insertion(+)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git push origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 351 bytes | 175.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote:
+To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
+```
