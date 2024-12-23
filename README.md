@@ -345,3 +345,154 @@ PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1>
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git merge main
 Already up to date.
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1>
+```
+## bundle 3
+## exercise 1
+```bash
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git add .
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git checkout main   cise 2 bundle 2 solution"
+Already on 'main'
+Your branch is up to date with 'origin/main'. 
+```                             n
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git pull origin maiFrom https://github.com/adeline333/Gym_Git_Exercise_Solutions
+Already up to date.
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git branch ft/team-page
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git ckeckout ft/team-page
+git: 'ckeckout' is not a git command. See 'git --help'.                     
+
+m-page
+Switched to branch 'ft/team-page'
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
+On branch ft/team-page
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git add team.html  
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git commit -m "added the team pag" 
+[ft/team-page b593462] added the team pag
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team.html
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git push origin  ft/team-page     
+Enumerating objects: 4, done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.       
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:    
+remote:      https://github.com/adeline333/Gym_Git_Exercise_Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git checkout main  
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git pull origin mairemote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+Unpacking objects: 100% (2/2), 979 bytes | 65.00 KiB/s, done.
+ * branch            main       -> FETCH_HEAD
+   33f36d0..ae34775  main       -> origin/main
+Updating 33f36d0..ae34775
+Fast-forward
+ services.html | 6 ++++++
+ 1 file changed, 6 insertions(+)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git checkout ft/team-page
+Switched to branch 'ft/team-page'
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git log
+Author: Adeline Tuyizere <adelinetuyizere333@gmail.com>
+Date:   Mon Dec 23 11:52:39 2024 +0200
+    added the team pag
+
+commit 33f36d00f0193474ccb652626e9f1f9cb04e9434
+Author: Adeline Tuyizere <adelinetuyizere333@gmail.com>
+Date:   Mon Dec 23 11:37:02 2024 +0200
+
+     exercise 2 bundle 2 solution
+
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git cherry-pick 33f36d00f0193474ccb652626e9f1f9cb04e9434
+You are currently cherry-picking commit 33f36d0.
+  (all conflicts fixed: run "git cherry-pick --continue")
+  (use "git cherry-pick --skip" to skip this patch)
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)      
+
+nothing to commit, working tree clean
+The previous cherry-pick is now empty, possibly due to conflict resolution.If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git cherry-pick --skip'
+  (use "git cherry-pick --skip" to skip this patch)
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)      
+
+Untracked files:
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git add contact.html
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git commit -m "added the contact page"
+[ft/contact-page b30aeb0] added the contact page
+ Date: Mon Dec 23 11:37:02 2024 +0200
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git push origin ft/contact-page
+Enumerating objects: 4, done.
+Compressing objects: 100% (3/3), done.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.       
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting: 
+remote:      https://github.com/adeline333/Gym_Git_Exercise_Solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git checkout ft/confaq-page
+Switched to a new branch 'ft/faq-page'
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git status
+On branch ft/faq-page
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git add faq.html   
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git commit -m "added initial changes to faq page"
+[ft/faq-page 5d5b55b] added initial changes to faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 450 bytes | 225.00 KiB/s, done.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.       
+remote:
+new/ft/faq-page
+remote:
+To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git checkout ft/team-page
+Switched to branch 'ft/team-page'
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git revert 33f36d00f0193474ccb652626e9f1f9cb04e9434
+[ft/team-page f71ce66] Revert " exercise 2 bundle 2 solution"
+ 1 file changed, 1 insertion(+), 142 deletions(-)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions> git push origin ft/team-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 367 bytes | 26.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
+   b593462..f71ce66  ft/team-page -> ft/team-page
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions>
+```
