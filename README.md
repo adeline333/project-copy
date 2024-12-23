@@ -204,3 +204,144 @@ To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
 PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions>
 
 ```
+
+## bundle 2
+## exercise 2
+```bash
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git branch
+* main
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git commit -m "solutio
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git add .
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git commit -m "solutioPS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git checkout main
+Already on 'main'                                                               n
+Your branch is up to date with 'origin/main'.
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git pull origin main
+From https://github.com/adeline333/Gym_Git_Exercise_Solutions
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git branch ft/service-redesign
+On branch main
+Your branch is up to date with 'origin/main'.
+
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git add "services.html"
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git commit -m "modifiePS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git checkout main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git pull origin main  vice-redesign
+From https://github.com/adeline333/Gym_Git_Exercise_Solutions
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+```bash
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git checkout ft/servict/service-redesign* ft/service-redesign
+  main
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git status
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git add .
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git commit -m "added new content to the services page"
+ 1 file changed, 1 insertion(+)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git push origin ft/service-redesign
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 376 bytes | 376.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
+   c96aa8d..6ffdca5  ft/service-redesign -> ft/service-redesign
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git checkout main     
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git branch
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git add .
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git commit -m "updated the services page iwth conflicting changes"
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 758 bytes | 189.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
+   c96aa8d..3538380  main -> main
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git diff main
+index 4cfccaa..dd80e5f 100644
+--- a/services.html
++++ b/services.html
+ <body>
+     <h1>Our Services</h1>
+     <p>We offer a variety of services tailored to your needs.</p>
+-    <p> created a new branch for redesigning"now adding another"</p>
++    <p>added the changes to the page accorf=ding to exercise 2 bundle 2</p>    
+ </body>
+ </html>
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git merge main        
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git merge main        
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+On branch ft/service-redesign
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+  (use "git add <file>..." to mark resolution)
+        both modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git add .
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git commit -m "resolved the conflicts"
+[ft/service-redesign 322effb] resolved the conflicts
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git status
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git push origin ft/service-redesign
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 386 bytes | 386.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/adeline333/Gym_Git_Exercise_Solutions.git
+   6ffdca5..322effb  ft/service-redesign -> ft/service-redesign
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1>
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1> git merge main
+Already up to date.
+PS C:\Users\adeli\Downloads\Gym_Git_Exercise_Solutions-1>
